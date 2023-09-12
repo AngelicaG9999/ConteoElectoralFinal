@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8990a2"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="53dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/imageButton7"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="326dp"
+        app:srcCompat="@drawable/descargafede" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="53dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginRight="328dp"
+        app:srcCompat="@drawable/descarga" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="152dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="#0B0A0A"
+        app:srcCompat="@drawable/bandera"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="-23dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-233dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="-47dp"
+        android:layout_toEndOf="@id/imageView"
+        android:fadeScrollbars="false"
+        android:fontFamily="monospace"
+        android:text="VOTACIONES ELECTORALES 2023"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="81dp"
+        android:fontFamily="monospace"
+        android:text="Ingrese la cantidad de electores:"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="241dp"
+        android:fontFamily="monospace"
+        android:text="Ingrese su edad:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-36dp"
+        android:layout_marginRight="14dp"
+        android:ems="3"
+        android:inputType="text"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/etEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCantidad"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="167dp"
+        android:ems="3"
+        android:inputType="text"
+        android:onClick="ValidarEdad"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="37dp"
+        android:layout_marginRight="106dp"
+        android:fontFamily="monospace"
+        android:text="SELECCIONE UN CANDIDATO"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/Btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="159dp"
+        android:onClick="Candidato1"
+        android:text="Candidato 1" />
+
+    <Button
+        android:id="@+id/Btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Btn1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="158dp"
+        android:onClick="Candidato2"
+        android:text="Candidato 2" />
+
+    <Button
+        android:id="@+id/Btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Btn2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="161dp"
+        android:onClick="Candidato3"
+        android:text="Candidato 3" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="51dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/imageButton6"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="328dp"
+        app:srcCompat="@drawable/fajardo" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageButton7"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-99dp"
+        android:layout_marginRight="51dp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/Tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageButton8"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-98dp"
+        android:layout_marginRight="50dp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/Tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageButton7"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="47dp"
+        android:layout_marginRight="49dp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/Tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageButton8"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="164dp"
+        android:onClick="Votos"
+        android:text="Conteo de votos" />
+
+
+</RelativeLayout>
